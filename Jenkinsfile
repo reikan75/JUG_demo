@@ -1,7 +1,6 @@
 pipeline{
     agent any
     environment{
-        GIT_CREDENTIALS = credentials('github_token')
         VENV_PATH = 'venv'
     }
     
