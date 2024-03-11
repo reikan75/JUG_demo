@@ -6,11 +6,6 @@ pipeline{
     }
     
     stages{
-        stage("Checkout"){
-            steps{
-                git branch: 'master', credentialsId: GIT_CREDENTIALS, url: 'https://github.com/reikan75/JUG_demo.git'
-            }
-        }
         stage("Build"){
             steps{
                 sh "python3 -m venv ${VENV_PATH}"
